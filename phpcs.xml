@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<ruleset name="super-linter">
+    <description>The default coding standard for usage with GitHub Super-Linter. It just includes PSR12.</description>
+    <rule ref="PSR12" />
+
+    <exclude-pattern>*Enum.php</exclude-pattern>
+    <exclude-pattern>*/database/migrations/*</exclude-pattern>
+
+    <file>./app/</file>
+    <file>./config/</file>
+    <file>./database/</file>
+    <file>./tests/</file>
+    <file>./routes/api.php</file>
+</ruleset>
